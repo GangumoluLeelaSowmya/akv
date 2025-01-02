@@ -1,0 +1,70 @@
+/* Container to hold course cards */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  justify-content: center;
+  background-color: white; /* Subtle background color for the container */
+}
+
+/* Individual course card styling */
+.course-card {
+  width: 300px;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow on hover */
+}
+
+.course-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Image styling inside course card */
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0e0e0; /* Subtle border under the image */
+}
+
+/* Details section of each course */
+.course-details {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Inline styling for course details */
+.course-detail {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #444; /* Darker text color */
+}
+
+/* Watch Video button styling */
+.watch-video-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red; /* Red background */
+  color: black; /* Black text */
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  text-decoration: none; /* Remove default link underline */
+}
+
+.watch-video-btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.watch-video-btn:active {
+  transform: scale(0.95); /* Slightly shrink button on click */
+}

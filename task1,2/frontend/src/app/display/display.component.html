@@ -1,0 +1,11 @@
+<div class="course-container">
+  <div *ngFor="let course of courses" class="course-card">
+    <img [src]="'http://localhost:4000/' + course.courseImage" alt="Course Image" class="course-image" />
+    <div class="course-details">
+      <p class="course-detail"><strong>Course Name:</strong> {{ course.courseName }}</p>
+      <p class="course-detail"><strong>Instructor Name:</strong> {{ course.instructorName }}</p>
+      <p class="course-detail"><strong>Description:</strong> {{ course.description }}</p>
+      <a [href]="'http://localhost:4000/' + course.courseVideo" target="_blank" class="watch-video-btn">Watch Video</a>
+    </div>
+  </div>
+</div>

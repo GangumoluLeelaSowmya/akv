@@ -1,0 +1,90 @@
+/* Prevent page scrolling in all directions */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Prevent scrolling in all directions */
+  display: flex; /* Ensure content fits viewport */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  box-sizing: border-box; /* Include padding and borders in width/height calculations */
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: white; /* Light background color */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px; /* Larger font size */
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Dark gray color */
+  margin-bottom: 20px; /* Space between heading and buttons */
+}
+
+/* Style the logout button */
+.logout-btn {
+  background-color: #ff4d4d; /* Bright red background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Larger padding for a bigger button */
+  font-size: 18px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* More rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  margin-top: 10px; /* Space above the button */
+  align-self: flex-end; /* Align the button to the right */
+}
+
+/* Hover effect for logout button */
+.logout-btn:hover {
+  background-color: #cc0000; /* Darker red */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.logout-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Style the button container for "Add Course" and "Display" buttons */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Add space between the buttons */
+  padding: 20px; /* Space around the buttons */
+  background-color: white; /* Light background to separate from the header */
+  width: 100%; /* Ensure buttons occupy full width */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+/* Style for "Add Course" and "Display" buttons */
+.add-course-btn {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 20px 40px; /* Larger padding for a bigger button */
+  font-size: 20px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* More rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Hover effect for "Add Course" and "Display" buttons */
+.add-course-btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.add-course-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}

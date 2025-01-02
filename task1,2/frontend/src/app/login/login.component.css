@@ -1,0 +1,105 @@
+/* Center the login form on the page */
+div {
+  max-width: 400px;
+  margin: 50px auto; /* Center horizontally and add spacing from the top */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Style the labels */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark gray for readability */
+  display: block;
+  margin-bottom: 8px; /* Spacing below labels */
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width of the container */
+  padding: 10px; /* Add padding for usability */
+  margin-bottom: 15px; /* Spacing between fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 14px; /* Adjust font size */
+  box-sizing: border-box; /* Prevent overflow */
+  transition: border-color 0.3s; /* Smooth hover effect */
+}
+
+/* Highlight input fields on focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add glow effect */
+}
+
+/* Style the button container */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  gap: 10px; /* Space between buttons */
+  width: 100%; /* Ensure buttons container spans full width */
+}
+
+/* Style the buttons */
+button {
+  width: calc(50% - 5px); /* Adjust width for proper spacing */
+  padding: 10px; /* Add padding for usability */
+  background-color: #ecf1f6; /* Blue background */
+  color: #0d0b14; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  font-weight: bold;
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Change button background on hover */
+button:hover {
+  background-color: #b3b6b9; /* Darker blue on hover */
+}
+
+/* Make the form responsive */
+@media (max-width: 600px) {
+  div {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px; /* Adjust padding for smaller buttons on small screens */
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 12px;
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 15px; /* Increase space between buttons */
+  }
+
+  button {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Style the heading */
+h2 {
+  text-align: center; /* Center the heading */
+  font-size: 24px; /* Size of the heading */
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}

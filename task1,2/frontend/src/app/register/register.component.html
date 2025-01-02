@@ -1,0 +1,66 @@
+<div>
+  <h2>Register</h2>
+
+  <label for="username">Username:</label>
+  <input
+    type="text"
+    id="username"
+    [(ngModel)]="username"
+    (keyup)="validateField('username')"
+  />
+  <br>
+  <p *ngIf="errors.username" class="error">{{ errors.username }}</p>
+
+  <label for="password">Password:</label>
+  <input
+    type="password"
+    id="password"
+    [(ngModel)]="password"
+    (keyup)="validateField('password')"
+  />
+  <br>
+  <p *ngIf="errors.password" class="error">{{ errors.password }}</p>
+
+  <label for="email">Email:</label>
+  <input
+    type="email"
+    id="email"
+    [(ngModel)]="email"
+    (keyup)="validateField('email')"
+  />
+  <br>
+  <p *ngIf="errors.email" class="error">{{ errors.email }}</p>
+
+  <label for="phoneNumber">Phone Number:</label>
+  <input
+    type="text"
+    id="phoneNumber"
+    [(ngModel)]="phoneNumber"
+    (keyup)="validateField('phoneNumber')"
+  />
+  <br>
+  <p *ngIf="errors.phoneNumber" class="error">
+    {{ errors.phoneNumber }}
+  </p>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" [(ngModel)]="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label for="dateOfBirth">Date of Birth:</label>
+  <input
+    type="date"
+    id="dateOfBirth"
+    [(ngModel)]="dateOfBirth"
+    (change)="validateField('dateOfBirth')"
+  />
+  <br>
+  <p *ngIf="errors.dateOfBirth" class="error">
+    {{ errors.dateOfBirth }}
+  </p>
+
+  <button (click)="onRegister()">Register</button>
+</div>
